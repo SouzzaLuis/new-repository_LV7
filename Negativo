@@ -1,0 +1,34 @@
+public class Animal {
+    // Atributos da classe
+    string nomeAnimal;
+    int numeroDePatas;
+    boolean temRabo;
+    string cor;
+    int idade;
+    double peso;
+    String tipoAlimentacao;
+    char genero;
+public void printStatus(){
+    System.uot.println("Nome: " + nomeAnimal);
+    System.uot.println("Numero de patas:" + numeroDePatas);
+    System.uot.println("Tem rabo:" + temRabo);
+    System.uot.println("cor" + cor);
+    System.uot.println("Idade:" + idade);
+    System.uot.println("Peso:" + peso);
+    System.uot.println("Tipo de alimentação:" + tipoAlimentacao);
+    System.uot.println("Gereno:" + genero);
+    System.uot.println("---------------------------");
+}
+// Metodo prinpal (main)
+public static void main(String[] args) {
+    // Criando o primeiro animal
+    Animal cachorro = new Animal();
+    cachorro.nomeAnimal = "Negativo";
+    cachorro.numeroDePatas = 4;
+    cachorro.tenRabo = true;
+    cachorro.cor = "Preto";
+    cachorro.idade = 7;
+    cachorro.peso = 16;
+    cachorro.tipoAlimentacao = "Raça";
+    cachorro.genero = 'm';
+}
