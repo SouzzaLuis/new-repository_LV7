@@ -1,5 +1,6 @@
 public class Animal {
-    // Atributos da classe
+    
+    // Atributos
     String nomeAnimal;
     int numeroDePatas;
     boolean temRabo;
@@ -8,28 +9,33 @@ public class Animal {
     double peso;
     String tipoAlimentacao;
     char genero;
-public void printStatus(){
-    System.out.println("Nome: " + nomeAnimal);
-    System.out.println("Numero de patas:" + numeroDePatas);
-    System.out.println("Tem rabo:" + temRabo);
-    System.out.println("Cor" + cor);
-    System.out.println("Idade:" + idade);
-    System.out.println("Peso:" + peso);
-    System.out.println("Tipo de alimentação:" + tipoAlimentacao);
-    System.out.println("Gêreno:" + genero);
-    System.out.println("---------------------------");
-}
-// Metodo prinpal (main)
-public static void main(String[] args) {
-    // Criando o primeiro animal
-    Animal cachorro = new Animal();
-    cachorro.printStatus();
-    cachorro.nomeAnimal = "Negativo";
-    cachorro.numeroDePatas = 4;
-    cachorro.temRabo = true;
-    cachorro.cor = "Preto";
-    cachorro.idade = 7;
-    cachorro.peso = 16;
-    cachorro.tipoAlimentacao = "Ração";
-    cachorro.genero = 'm';
+
+    public void printStatus() {
+        System.out.println("Nome: " + nomeAnimal);
+        System.out.println("Número de patas: " + numeroDePatas);
+        System.out.println("Tem rabo: " + temRabo);
+        System.out.println("Cor: " + cor);
+        System.out.println("Idade: " + idade + " anos");
+        System.out.println("Peso: " + peso + " kg");
+        System.out.println("Tipo de alimentação: " + tipoAlimentacao);
+        System.out.println("Gênero: " + genero);
+        System.out.println("---------------------------");
     }
+
+    public static void main(String[] args) {
+        
+        // Criando o cachorro
+        Animal cachorro = new Animal();
+        
+        cachorro.nomeAnimal       = "Negativo";
+        cachorro.numeroDePatas    = 4;
+        cachorro.temRabo          = true;
+        cachorro.cor              = "Preto";
+        cachorro.idade            = 7;
+        cachorro.peso             = 16.5; 
+        cachorro.tipoAlimentacao  = "Ração";
+        cachorro.genero           = 'm';
+
+        //cachorro.printStatus();
+    }
+}
