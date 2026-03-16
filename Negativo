@@ -23,6 +23,7 @@ public void printStatus(){
 public static void main(String[] args) {
     // Criando o primeiro animal
     Animal cachorro = new Animal();
+    cachorro.printStatus();
     cachorro.nomeAnimal = "Negativo";
     cachorro.numeroDePatas = 4;
     cachorro.temRabo = true;
@@ -31,5 +32,4 @@ public static void main(String[] args) {
     cachorro.peso = 16;
     cachorro.tipoAlimentacao = "Ração";
     cachorro.genero = 'm';
-    cachorro.printStatus()
     }
