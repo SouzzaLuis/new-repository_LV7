@@ -1,23 +1,23 @@
 public class Animal {
     // Atributos da classe
-    string nomeAnimal;
+    String nomeAnimal;
     int numeroDePatas;
     boolean temRabo;
-    string cor;
+    String cor;
     int idade;
     double peso;
     String tipoAlimentacao;
     char genero;
 public void printStatus(){
-    System.uot.println("Nome: " + nomeAnimal);
-    System.uot.println("Numero de patas:" + numeroDePatas);
-    System.uot.println("Tem rabo:" + temRabo);
-    System.uot.println("cor" + cor);
-    System.uot.println("Idade:" + idade);
-    System.uot.println("Peso:" + peso);
-    System.uot.println("Tipo de alimentação:" + tipoAlimentacao);
-    System.uot.println("Gereno:" + genero);
-    System.uot.println("---------------------------");
+    System.out.println("Nome: " + nomeAnimal);
+    System.out.println("Numero de patas:" + numeroDePatas);
+    System.out.println("Tem rabo:" + temRabo);
+    System.out.println("Cor" + cor);
+    System.out.println("Idade:" + idade);
+    System.out.println("Peso:" + peso);
+    System.out.println("Tipo de alimentação:" + tipoAlimentacao);
+    System.out.println("Gêreno:" + genero);
+    System.out.println("---------------------------");
 }
 // Metodo prinpal (main)
 public static void main(String[] args) {
@@ -25,10 +25,11 @@ public static void main(String[] args) {
     Animal cachorro = new Animal();
     cachorro.nomeAnimal = "Negativo";
     cachorro.numeroDePatas = 4;
-    cachorro.tenRabo = true;
+    cachorro.temRabo = true;
     cachorro.cor = "Preto";
     cachorro.idade = 7;
     cachorro.peso = 16;
-    cachorro.tipoAlimentacao = "Raça";
+    cachorro.tipoAlimentacao = "Ração";
     cachorro.genero = 'm';
-}
+    cachorro.printStatus()
+    }
